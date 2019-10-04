@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,700&display=swap');
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    margin:0;
+    max-width: 760px;
+}
+
 .top_banner{
 	display: flex;
 	background-color: #FFF3F3;
@@ -21,10 +29,6 @@
 	font-weight: bold;
 	background-color: #8E1616;
 
-}
-
-body {
-    margin:0;
 }
 
 .links{
@@ -68,7 +72,7 @@ a:hover{
 	margin: 0em 5em;
 	background-color: #D2D0CF;
 	padding-bottom: 1em;
-	opacity: 0.9;
+	background-color: rgba(255, 255, 255, 0.7);
 	box-shadow: 0 10px 10px -2px rgba(0,0,0,0.2);
 	border:2px solid rgb(114, 112, 112);
 	height: 80%;
@@ -85,6 +89,7 @@ a:hover{
 #box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom:1em;
 }
 
@@ -96,6 +101,13 @@ a:hover{
 #box > #forms1 > input {
     margin:0 0 1em 4em;
     height: 2em;
+}
+
+#country {
+    margin:0 0 1em 4em;
+    height: 2.5em;
+    width:13em;
+    font-weight: bold;
 }
 
 #box > #forms2 > p {
@@ -145,6 +157,77 @@ button > span{
 
 #firstline {
     font-size: 1.5em;
+}
+
+.tables {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:2em;
+    padding-bottom:4em;
+}
+
+#left {
+    border-top:2px solid rgb(114, 112, 112);
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,0.2);
+    margin-left:3em;
+    width: 18em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#right {
+    border-top:2px solid rgb(114, 112, 112);
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,0.2);
+    margin-right:3em;
+    width: 18em;
+    padding-top: 1em;
+}
+
+#left > p {
+    margin:0;
+    margin-left: 1.2em;
+}
+
+#right > p {
+    margin:0;
+    margin-left: 1.2em;
+}
+
+#right> p.upperlines {
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+
+#left > p.upperlines {
+    font-size: 1.3em;
+    margin-left: 1em
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '\2714\0020';
+    color: lightgreen;
+    margin-right: 0.1em;
+
+  }
+
+li {
+    margin: 1em 0;
+}
+
+.lowlines {
+    font-weight: bold;
+    margin:0;
+}
+.smallfeet > p {
+    color:grey;
+    font-size: 0.8em;
+    margin:0.2em 0.2em 0 0;
+    margin-left: 1.3em;
 }
 
 footer {
