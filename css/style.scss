@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,700&display=swap');
 
+
 body {
     font-family: 'Big Shoulders Display', cursive;
     margin:0;
@@ -21,7 +22,11 @@ body {
 .fullstack{
 	justify-self: flex-end;
 	padding-right: 1em;
-	height: 80%;
+    height: 80%;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 #navbar{
@@ -51,12 +56,18 @@ a:hover{
 	color: white;
 }
 
-
+//Index.html
 #container {
 	background-image: url("../img/back.jpg");
 	background-color: #cccccc;
 	background-size: 100% 73%;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 768px) {
+        min-width: 212px;
+        background-size: 100% 76%;
+
+    }
 }
 
 #toptext > p {
@@ -75,8 +86,11 @@ a:hover{
 	background-color: rgba(255, 255, 255, 0.7);
 	box-shadow: 0 10px 10px -2px rgba(0,0,0,0.2);
 	border:2px solid rgb(114, 112, 112);
-	height: 80%;
-
+    height: 80%;
+    
+    @media screen and (max-width: 768px) {
+        min-width: 212px;
+    }
 }
 
 .toplines {
@@ -91,33 +105,81 @@ a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom:1em;
+    
+    @media screen and (max-width: 768px) {
+        display: block;
+        min-width: 212px;
+    }
 }
 
 #box > #forms1 > p {
     margin: 0;
     margin-left:3.5em;
+
+    @media screen and (max-width: 768px) {
+        margin:0;
+        padding:0;
+    }
+}
+
+#forms1 {
+    @media screen and (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+#forms2 {
+    @media screen and (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        }
 }
 
 #box > #forms1 > input {
     margin:0 0 1em 4em;
     height: 2em;
+    @media screen and (max-width: 768px) {
+        margin:0;
+        padding:0;
+    }    
 }
 
 #country {
     margin:0 0 1em 4em;
-    height: 2.5em;
-    width:13em;
+    height: 32.66px;
+    width: 173px;
     font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+        margin:0;
+        padding:0;
+    }
 }
 
 #box > #forms2 > p {
     margin: 0;
     margin-right: 2em;
+
+    @media screen and (max-width: 768px) {
+        margin:0;
+        padding:0;
+    }
 }
 
 #box > #forms2 > input {
     margin:0 4em 1em 0;
     height: 2em;
+
+    @media screen and (max-width: 768px) {
+        margin:0;
+        padding:0;
+    }
 }
 
 button { 
@@ -165,6 +227,14 @@ button > span{
     justify-content: space-between;
     padding-top:2em;
     padding-bottom:4em;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
 }
 
 #left {
@@ -174,6 +244,12 @@ button > span{
     width: 18em;
     padding-top: 1em;
     padding-bottom: 1em;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        padding:0;
+        
+    }
 }
 
 #right {
@@ -182,6 +258,12 @@ button > span{
     margin-right:3em;
     width: 18em;
     padding-top: 1em;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        margin-top:1.5em;
+        padding:0;
+    }
 }
 
 #left > p {
@@ -264,4 +346,48 @@ footer {
 
 #copy > p {
     padding: 0.5em;
+}
+
+//Team.html
+
+#content {
+    background-image: linear-gradient(rgb(245, 244, 243), rgb(228, 227, 227));
+    padding-bottom: 1em;
+    }
+
+#titelline {
+    text-align: center;
+    color: red;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top:0;
+    padding-top: 0.6em;
+}
+
+#team {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+.bottomlines {
+ text-align: center;
+ color: #8E1616;
+ font-weight: bold;
+}
+
+div.content > #qoute {
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+
+#aBtn, #aBtn:link {
+    @extend button;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: unset;
+    padding: 0.5em 0;
 }

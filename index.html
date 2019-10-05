@@ -11,16 +11,16 @@
         <header id="header">
                 <div class ="top_banner">		
                     <div class = "cf_logo">
-                        <a href="index.html"><img src= "img/logo.png"></a>
+                        <a href="index.html"><img src= "./img/logo.png"></a>
                     </div>
                     <div class = "fullstack">
-                        <a href="https://codefactory.wien"><img src="img/banner.png"></a>
+                        <a href="https://codefactory.wien"><img src="./img/banner.png"></a>
                     </div>
                 </div>
                 <div>
                     <nav id= "navbar">
-                            <a class = "links" href="index.html" title="Home">Home</a>
-                            <a class = "links" href="index.html" title="Tech">Team</a>
+                            <a class = "links" href="./index.html" title="Home">Home</a>
+                            <a class = "links" href="./team.html" title="Tech">Team</a>
                     </nav>
                 </div>
             </header><!-- /header -->
@@ -35,9 +35,9 @@
             <div id = "box">
                 <div id = "forms1">
                     <p>Your name:</p>
-                    <input type="text">
+                    <input id="name" type="text">
                     <p>Country:</p>
-                    <select name="Country" id="country">
+                    <select id="country" name="Country" id="country">
                         <option value="austria">Austria</option>
                         <option value="hungary">Hungary</option>
                         <option value="greece">Greece</option>
@@ -45,9 +45,9 @@
                 </div>
                 <div id = "forms2">
                     <p>Age:</p>
-                    <input type="text">
+                    <input id="age" type="number">
                     <p>Horsepower:</p>
-                    <input type="text">
+                    <input id="hp" type="number">
                 </div>
             </div>
             <button><span>Calculate</span></button>
@@ -86,7 +86,7 @@
             <p class = "lowlines">Earned benefits</p>
             <div class = "smallfeet">
                <p>Accident forgiveness1 | New car</p>
-               <p>ReplacementTM</p>
+               <p>Replacement<sup>TM</sup></p>
             </div>
         </div>
     </div>
@@ -94,8 +94,8 @@
    <footer>
         <div>
             <nav id= "footbar">
-                <a class = "links" href="index.html" title="Home">Home</a>
-                <a class = "links" href="index.html" title="Tech">Team</a>
+                <a class = "links" href="./index.html" title="Home">Home</a>
+                <a class = "links" href="./team.html" title="Tech">Team</a>
             </nav>
        </div>    
        <div id = "logoarea">
@@ -105,5 +105,6 @@
             <p>Tamas Piski - CodeFactory 2019</p>
        </div>    
    </footer>
+<script src="./script/script.js"></script>
 </body>
 </html>

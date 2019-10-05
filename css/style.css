@@ -30,6 +30,12 @@ body {
   height: 80%;
 }
 
+@media screen and (max-width: 768px) {
+  .fullstack {
+    display: none;
+  }
+}
+
 #navbar {
   font-size: 22px;
   font-weight: bold;
@@ -63,6 +69,13 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+  #container {
+    min-width: 212px;
+    background-size: 100% 76%;
+  }
+}
+
 #toptext > p {
   font-size: 2em;
   padding-left: 1em;
@@ -83,6 +96,12 @@ a:hover {
   height: 80%;
 }
 
+@media screen and (max-width: 768px) {
+  #calzone {
+    min-width: 212px;
+  }
+}
+
 .toplines {
   font-size: 2em;
   text-align: center;
@@ -101,9 +120,58 @@ a:hover {
   margin-bottom: 1em;
 }
 
+@media screen and (max-width: 768px) {
+  #box {
+    display: block;
+    min-width: 212px;
+  }
+}
+
 #box > #forms1 > p {
   margin: 0;
   margin-left: 3.5em;
+}
+
+@media screen and (max-width: 768px) {
+  #box > #forms1 > p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #forms1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #forms2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 #box > #forms1 > input {
@@ -111,11 +179,25 @@ a:hover {
   height: 2em;
 }
 
+@media screen and (max-width: 768px) {
+  #box > #forms1 > input {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 #country {
   margin: 0 0 1em 4em;
-  height: 2.5em;
-  width: 13em;
+  height: 32.66px;
+  width: 173px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #country {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #box > #forms2 > p {
@@ -123,12 +205,26 @@ a:hover {
   margin-right: 2em;
 }
 
+@media screen and (max-width: 768px) {
+  #box > #forms2 > p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 #box > #forms2 > input {
   margin: 0 4em 1em 0;
   height: 2em;
 }
 
-button {
+@media screen and (max-width: 768px) {
+  #box > #forms2 > input {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+button, #aBtn, #aBtn:link {
   width: 8em;
   margin: -4em;
   position: relative;
@@ -140,7 +236,7 @@ button {
   background-color: #339235;
 }
 
-button > span {
+button > span, #aBtn > span, #aBtn:link > span {
   margin: 0;
   padding: 0;
   color: white;
@@ -179,6 +275,24 @@ button > span {
   padding-bottom: 4em;
 }
 
+@media screen and (max-width: 768px) {
+  .tables {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+}
+
 #left {
   border-top: 2px solid #727070;
   -webkit-box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2);
@@ -189,6 +303,13 @@ button > span {
   padding-bottom: 1em;
 }
 
+@media screen and (max-width: 768px) {
+  #left {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 #right {
   border-top: 2px solid #727070;
   -webkit-box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2);
@@ -196,6 +317,14 @@ button > span {
   margin-right: 3em;
   width: 18em;
   padding-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  #right {
+    margin: 0;
+    margin-top: 1.5em;
+    padding: 0;
+  }
 }
 
 #left > p {
@@ -282,5 +411,45 @@ footer {
 
 #copy > p {
   padding: 0.5em;
+}
+
+#content {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f4f3), to(#e4e3e3));
+  background-image: linear-gradient(#f5f4f3, #e4e3e3);
+  padding-bottom: 1em;
+}
+
+#titelline {
+  text-align: center;
+  color: red;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 0.6em;
+}
+
+#team {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.bottomlines {
+  text-align: center;
+  color: #8E1616;
+  font-weight: bold;
+}
+
+div.content > #qoute {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#aBtn, #aBtn:link {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  position: unset;
+  padding: 0.5em 0;
 }
 /*# sourceMappingURL=style.css.map */
